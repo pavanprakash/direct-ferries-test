@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "test:uk": "COUNTRY=uk gherkin-testcafe chrome src/steps/** src/features/uk/**.feature --skip-js-errors",
+    "test:de": "COUNTRY=de gherkin-testcafe chrome src/steps/** src/features/de/route-check-tests.feature --skip-js-errors",
+    "test:it": "COUNTRY=it gherkin-testcafe chrome src/steps/** src/features/it/**.feature --skip-js-errors"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.2.1",
+    "gherkin-testcafe": "7.2.0",
+    "testcafe": "^3.5.0"
+  }
+}
